@@ -31,11 +31,23 @@ body{
 
 }
 
+.cajaNotificaciones{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
 .notificacion{
 
     width: 500px;
     height: 100px;
-    background-color: whitesmoke;
+    background-color: #ececec;
     margin: 0;
     padding: 0;
     border: 1px solid black;
@@ -47,6 +59,8 @@ body{
     justify-content: space-evenly;
     align-items: center;
 
+    a
+
 
 }
 
@@ -55,7 +69,7 @@ body{
     width: 90%;
     height: 90%;
     display: flex;
-    background-color: whitesmoke;
+    background-color: ececec;
     
     position: relative;
     align-self: center;
@@ -82,8 +96,8 @@ body{
 .contenedorTextoNotificacion{
     
     width: 60%;
-    height:100%;
-    background-color: lightgray;
+    height:90%;
+    background-color: #ececec;
     display: flex;
     border-radius: 5%;
 
@@ -98,7 +112,7 @@ body{
     width: 90%;
     max-width: 90%;
     height: 40%;
-    background-color: whitesmoke;
+    background-color: #ececec;
 
     text-indent: 5%;
 
@@ -106,27 +120,36 @@ body{
     align-items: center;
     justify-content: start;
 
+}
+
+.nombre, .desc{
 
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
-.contenedorFecha{
+.nombre{
+    font-weight: bold;
+}
+
+
+
+.contenedorNotificacion .contenedorFecha, .contenedorOpciones{
     width: 12.5%;
     height: 100%;
-    background-color: yellow;
+    background-color: #ececec;
     display: inline-block;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Open Sans', sans-serif;
+    white-space: nowrap;
     
 }
 
 .contenedorOpciones{
-    
-    width: 12.5%;
-    height: 100%;
-    background-color: purple;
-    display: inline-block;
-    
+    cursor: pointer;
 }
 
