@@ -95,7 +95,7 @@ body{
 .contenedorTextoNotificacion{
     
     width: 60%;
-    height:70%;
+    height:75%;
     background-color: #E0e0e0;
     display: flex;
     border-radius: 5%;
@@ -154,7 +154,11 @@ body{
     
 }
 
-.contenedorOpciones{
+.contenedorFecha .fecha{
+    align-self: start;
+}
+
+.contenedorNotificacion .contenedorOpciones{
     width: 5%;
     height: 75%;
     background-color: #ececec;
