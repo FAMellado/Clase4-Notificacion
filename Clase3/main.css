@@ -1,8 +1,11 @@
-
+body{
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;;
+}
 
 .uno{
 
-    line-height: 0px;
     letter-spacing: 25px;
 }
 
@@ -35,20 +38,23 @@
     background-color: whitesmoke;
     margin: 0;
     padding: 0;
-    border-style: solid;
+    border: 1px solid black;
     border-color: darkgray;
 
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.2);
+
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+
 
 }
 
-.contenedorNotificacion{
+.notificacion .contenedorNotificacion{
 
     width: 90%;
     height: 90%;
-    display: inline-flex;
+    display: flex;
     background-color: whitesmoke;
     
     position: relative;
@@ -58,63 +64,53 @@
 
 }
 
-.fotoNotificacion{
+.notificacion .contenedorNotificacion .fotoNotificacion{
 
     width: 15%;
     height: 100%;
-    display: flex;
+    display: inline-flex;
 
     align-items: center;
 
 }
 
-.fotoNotificacion img{
+.notificacion .contenedorNotificacion .fotoNotificacion img{
     max-height: 100%;
     max-width: 100%;
 }
 
 .contenedorTextoNotificacion{
+    
     width: 60%;
     height:100%;
-    background-color: rgb(0, 238, 255);
-    display: inline-flex;
-    position: relative;
+    background-color: lightgray;
+    display: flex;
+    border-radius: 5%;
+
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5%;
+
 }
 
-.nombreNotificacion{
+.contenedorTextoNotificacion .nombreNotificacion, .descripcionNotificacion{
 
     width: 90%;
-    height: 40%;
     max-width: 90%;
-    max-height: 40%;
+    height: 40%;
     background-color: whitesmoke;
-    display: flex;
-    position: absolute;
-    top: 10%;
-    justify-content: start;
-    align-items: center;
+
     text-indent: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
 
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: clip;
+    text-overflow: ellipsis;
 
-}
-
-.descripcionNotificacion{
-    width: 90%;
-    height: 40%;
-    background-color: whitesmoke;
-    display: flex;
-    position: absolute;
-    bottom: 10%;
-    justify-content: start;
-    align-items: center;
-    text-indent: 5%;
-    
 }
 
 .contenedorFecha{
